@@ -4,7 +4,7 @@ import SimpleFighter from './SimpleFighter';
 interface Fighter extends SimpleFighter {
   defense: number,
   energy?: Energy,
-  special?(enemy: Fighter): void,
+  special?(enemy: SimpleFighter): void,
   levelUp(): void,
 }
 
